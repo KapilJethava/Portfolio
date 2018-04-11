@@ -1,3 +1,5 @@
 section{
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
 }
