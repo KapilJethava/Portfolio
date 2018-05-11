@@ -3,3 +3,39 @@ section{
     flex-direction: column;
     height: 700px;
 }
+.cntnr {
+    display: flex;
+    flex-direction: row;
+    margin-top:70px;
+    padding:5px 15px;
+}
+
+.item {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    min-width: 50px;
+    border: 1px solid #ddd;
+    height:360px;
+    padding: 10px;
+    transition: 0.3s all cubic-bezier(0.46, 0.24, 1, 1);
+    background-color: #2196F3;
+}
+
+.inner-item {
+    display: none;
+}
+
+.item:not(:last-child){
+    margin-right:20px;
+}
+
+.item:hover {
+    flex: 12;
+}
+.item:hover .inner-item{
+    display: block;
+}
+.item:hover .title{
+    display: none;
+}
